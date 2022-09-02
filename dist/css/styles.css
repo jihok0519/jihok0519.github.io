@@ -5040,7 +5040,6 @@ textarea.form-control-lg {
   }
 }
 
-
 .progress-bar-striped {
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-size: 1rem 1rem;
@@ -11559,128 +11558,15 @@ footer.footer .social-link:hover {
     -webkit-clip-path: inset(2rem);
             clip-path: inset(2rem);
   }
+}
 
-  html, body {
-    display: grid;
-    height: 100%;
-  }
-
-  .skills-bar {
-    display: grid;
-    place-items: flex-start;
-    width: 100%;
-    background: #fff;
-    border-radius: 10px;
-    padding: 25px 30px;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
-  } 
-
-  .skills-bar .bar {
-    margin: 20px 0;
-  }
-
-  .skills-bar .bar .info {
-    margin-bottom: 10px;
-  }
-
-  .skills-bar .bar:first-child {
-    margin-top: 0px;
-  }
-
-  .skills-bar .bar .info span {
-    font-size: 17px;
-    font-weight: 500;
-    opacity: 0;
-    animation: showText 0.5s 1s linear forwards;
-  }
-
-  @keyframes showText {
-    100% {
-      opacity: 1;
-    }
-  }
-
-  .skills-br .bar .progress-line {
-    position: relative;
-    height: 10px;
-    width: 100%;
-    background: #f0f0f0;
-    border-radius: 10px;
-    transform: scaleX(0);
-    transform-origin: left;
-    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5),
-                      0px 1px rgba(255,255,255,0.8);
-    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
-  }
-
-  .bar .progress-line span {
-    height: 1%;
-    width: 80%;
-    background: #6665ee;
-    position: absolute;
-    border-radius: 10px;
-    transform: scaleX(0);
-    transform-origin: left;
-    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
-  }
-
-  @keyframes animate {
-    100% {
-      transform: scaleX(1);
-    }
-  }
-  
-  .bar .progress-line span::before {
-    position: absolute;
-    content: "";
-    right: 0;
-    top: -10px;
-    height: 0;
-    width: 0;
-    border: 7px solid transparent;
-    border-bottom-width: 0px;
-    border-right-width: 0px;
-    border-top-color: #000;
-    opacity: 0;
-    animation: showText2 0.5s 1.5s linear forwards;
-  }
-
-  .bar .progress-line span::after {
-    position: absolute;
-    right: 0;
-    top: -28px;
-    color: #fff;
-    font-size: 12px;
-    font-weight: 500;
-    background: #000;
-    padding: 1px 8px;
-    border-radius: 3px;
-    opacity: 0;
-    animation: showText2 0.5s 1.5s linear forwards;
-  }
-
-  @keyframes showText2 {
-    100% {
-      opacity: 1;
-    }
-  }
-
-  .progress-line.html span {
-    width: 60%;
-  }
-  .progress-line.css span {
-    width: 60%;
-  }
-  .progress-line.react span {
-    width: 40%;
-  }
-  .progress-line.python span {
-  width: 30%;
-  }
-  .progress-line.psql span {
-    width: 30%;
-  }
-  .progress-line.jquery span {
-    width: 50%;
-  }
+.service-icon {
+  background-color: #fff;
+  color: #1D809F;
+  height: 7rem;
+  width: 7rem;
+  display: block;
+  line-height: 7.5rem;
+  font-size: 2.25rem;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
